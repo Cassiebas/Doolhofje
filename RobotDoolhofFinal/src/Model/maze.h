@@ -2,7 +2,7 @@
 #define MAZE_H
 
 #include "room.h"
-#include "init.h"
+#include "../View/init.h"
 
 #define ROOM_SIZE 80
 //Mogelijke sizes op 2560x1440: 1, 2,4,5,8,10,16,20,32,40,80,160

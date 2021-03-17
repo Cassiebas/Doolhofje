@@ -28,12 +28,8 @@ void model::maze::generate(SDL_Point *counter, bool *end) {
 	int chosen_neighbour;
 	int i = counter->x;
 	int j = counter->y;
-	//for (int j = 0; j <= SCREEN_HEIGHT/ROOM_SIZE; j++) {
-		//for (int i = 0; i <= SCREEN_WIDTH/ROOM_SIZE; i++) {
 			chosen_neighbour = rand() % 4;
 			rooms[i][j].setVisited();
-			//rooms[i][j].setMissingWall(top);
-			//rooms[i][j].setMissingWall(bottom);
 				if ((rooms[i+1][j  ].isVisited() == 1 && 
 				    rooms[i  ][j-1].isVisited() == 1 &&
 				    rooms[i-1][j  ].isVisited() == 1 &&
@@ -90,8 +86,6 @@ void model::maze::generate(SDL_Point *counter, bool *end) {
 					//printf("room %d, %d goes to bottom\n", i, j);
 					j++;
 				}
-		//}
-	//}
 	counter->x = i;
 	counter->y = j;
 }

@@ -23,7 +23,6 @@ void model::room::setCoords(SDL_Point newPoint) {
 
 void model::room::draw(SDL_Renderer *renderer) {
 	SDL_Point line[2];
-	//for (int i = 0; i < 2; i++) {
 	if (side_missing[right] == 0) {
 		line[0].x = corners[top_right].x;
 		line[0].y = corners[top_right].y;
@@ -56,7 +55,6 @@ void model::room::draw(SDL_Renderer *renderer) {
 		SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
 		SDL_RenderDrawLines(renderer, line, 2);
 	}
-	//}	
 }
 
 void model::room::setSize(int newSize) {

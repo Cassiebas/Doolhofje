@@ -10,7 +10,7 @@ CPPFLAGS := -std=c++17 -Wall -Wpedantic `sdl2-config --cflags --libs` -lSDL2_ima
 HDRS :=
 
 # add source files here
-SRCS := main.cpp Model/init.cpp Model/maze.cpp Model/room.cpp Model/robot.cpp Model/input.cpp Model/path.cpp Model/node.cpp
+SRCS := main.cpp View/init.cpp Model/maze.cpp Model/room.cpp Controller/robot.cpp Model/input.cpp Controller/path.cpp View/node.cpp
 
 # generate names of object files
 OBJS := $(SRCS:.cpp=.o)
